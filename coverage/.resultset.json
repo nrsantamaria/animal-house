@@ -276,6 +276,8 @@
       ],
       "/Users/nickys/Desktop/animal-house/config/routes.rb": [
         1,
+        1,
+        1,
         null,
         null
       ],
@@ -299,14 +301,16 @@
         null,
         1,
         2,
+        2,
         null
       ],
       "/Users/nickys/Desktop/animal-house/app/models/type.rb": [
         1,
         1,
+        1,
         null
       ]
     },
-    "timestamp": 1500654343
+    "timestamp": 1500656266
   }
 }
