@@ -12,6 +12,13 @@ class AnimalsController < ApplicationController
     json_response(@animal)
   end
 
+  def random
+    number = Random.new
+    @type = Type.find(params[:type_id])
+    @animal = @type.animals.find(number.rand(1...20))
+    json_response(@animal)
+  end
+
   def create
     @type = Type.find(params[:type_id])
     @animal = @type.animals.create!(animal_params)
