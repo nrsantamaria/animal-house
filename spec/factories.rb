@@ -3,7 +3,7 @@ FactoryGirl.define do
     species('Cat')
     factory :type_with_animals do
       transient do
-        animals_count 10
+        animals_count 20
       end
       after(:create) do |type, evaluator|
         create_list(:animal, evaluator.animals_count, type: type)

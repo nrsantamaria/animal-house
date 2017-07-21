@@ -39,6 +39,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'capybara'
   gem 'shoulda-callback-matchers'
+  gem 'database_cleaner'
 end
 
 group :development do
