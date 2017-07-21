@@ -225,6 +225,20 @@
         null,
         null
       ],
+      "/Users/nickys/Desktop/animal-house/config/initializers/kaminari_config.rb": [
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/nickys/Desktop/animal-house/config/initializers/mime_types.rb": [
         null,
         null,
@@ -278,6 +292,9 @@
         1,
         1,
         1,
+        1,
+        1,
+        null,
         null,
         null
       ],
@@ -287,6 +304,7 @@
         null
       ],
       "/Users/nickys/Desktop/animal-house/app/models/animal.rb": [
+        1,
         1,
         1,
         null
@@ -305,6 +323,7 @@
         null
       ],
       "/Users/nickys/Desktop/animal-house/app/models/type.rb": [
+        1,
         1,
         1,
         1,
@@ -620,6 +639,6 @@
         null
       ]
     },
-    "timestamp": 1500660004
+    "timestamp": 1500660500
   }
 }
