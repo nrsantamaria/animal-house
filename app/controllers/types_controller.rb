@@ -23,6 +23,15 @@ class TypesController < ApplicationController
     end
   end
 
+  def destroy
+    @type = Type.find(params[:id])
+    if @type.destroy!
+      render status: 200, json: {
+        message: "Successfully deleted!"
+      }
+    end
+  end
+
   private
   def type_params
     params.permit(:species)
