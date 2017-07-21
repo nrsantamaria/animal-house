@@ -345,6 +345,19 @@
         null,
         null
       ],
+      "/Users/nickys/Desktop/animal-house/spec/requests/update_type_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/nickys/Desktop/animal-house/app/controllers/types_controller.rb": [
         1,
         1,
@@ -353,8 +366,8 @@
         null,
         null,
         1,
-        0,
-        0,
+        1,
+        1,
         null,
         null,
         1,
@@ -363,9 +376,9 @@
         null,
         null,
         1,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null,
         null,
         null,
@@ -382,7 +395,7 @@
         null,
         1,
         1,
-        2,
+        3,
         null,
         null
       ],
@@ -402,11 +415,11 @@
       "/Users/nickys/Desktop/animal-house/app/controllers/concerns/response.rb": [
         1,
         1,
-        4,
+        5,
         null,
         null
       ]
     },
-    "timestamp": 1500656956
+    "timestamp": 1500657168
   }
 }
