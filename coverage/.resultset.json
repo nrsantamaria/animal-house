@@ -62,7 +62,7 @@
         null,
         null,
         1,
-        30,
+        32,
         null,
         null,
         1,
@@ -70,11 +70,11 @@
         null,
         null,
         1,
-        30,
+        32,
         null,
         null,
         1,
-        30,
+        32,
         null,
         null,
         null,
@@ -301,7 +301,7 @@
         1,
         null,
         1,
-        8,
+        10,
         null,
         null,
         null,
@@ -508,6 +508,25 @@
         null,
         null
       ],
+      "/Users/nickys/Desktop/animal-house/spec/requests/random_animal_route_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/nickys/Desktop/animal-house/spec/requests/serializer_spec.rb": [
         1,
         null,
@@ -587,9 +606,9 @@
         null,
         null,
         1,
-        0,
-        0,
-        0,
+        2,
+        2,
+        2,
         null,
         null,
         1,
@@ -639,7 +658,7 @@
       "/Users/nickys/Desktop/animal-house/app/controllers/concerns/response.rb": [
         1,
         1,
-        19,
+        21,
         null,
         null
       ],
@@ -701,6 +720,6 @@
         null
       ]
     },
-    "timestamp": 1500678533
+    "timestamp": 1500678759
   }
 }
