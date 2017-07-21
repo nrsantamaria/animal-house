@@ -14,7 +14,7 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-21T10:29:21-07:00">2017-07-21T10:29:21-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-21T10:32:23-07:00">2017-07-21T10:32:23-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.21
+         1.22
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>32</b> files in total.
-    <b>183</b> relevant lines. 
-    <span class="green"><b>183</b> lines covered</span> and
+    <b>33</b> files in total.
+    <b>189</b> relevant lines. 
+    <span class="green"><b>189</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -77,7 +77,7 @@
         <td>3</td>
         <td>3</td>
         <td>0</td>
-        <td>4.3</td>
+        <td>4.7</td>
       </tr>
       
       <tr>
@@ -87,7 +87,7 @@
         <td>21</td>
         <td>21</td>
         <td>0</td>
-        <td>1.5</td>
+        <td>1.6</td>
       </tr>
       
       <tr>
@@ -302,6 +302,16 @@
       
       <tr>
         <td class="strong"><a href="#432050ce1f8cced47ad3a8bd8276cab703e85bb1" class="src_link" title="spec/requests/get_individual_animal_spec.rb">spec/requests/get_individual_animal_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>10</td>
+        <td>6</td>
+        <td>6</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#96e0753b86d335140c197b6fed325a2fcc957a64" class="src_link" title="spec/requests/get_individual_type_spec.rb">spec/requests/get_individual_type_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>10</td>
         <td>6</td>
@@ -606,8 +616,8 @@
           <code class="ruby">  def json_response(object, status = :ok)</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="3">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="12" data-linenumber="3">
+          <span class="hits">12</span>
           
           <code class="ruby">    render json: object, status: status</code>
         </li>
@@ -685,14 +695,14 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="8">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="8">
+          <span class="hits">4</span>
           
           <code class="ruby">    @type = Type.find(params[:id])</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="9">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="9">
+          <span class="hits">3</span>
           
           <code class="ruby">    json_response(@type)</code>
         </li>
@@ -3086,7 +3096,7 @@
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">  it &#39;returns a deleted status&#39; do</code>
+          <code class="ruby">  it &#39;returns an individual animal status&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="6">
@@ -3099,6 +3109,85 @@
           <span class="hits">1</span>
           
           <code class="ruby">    get &quot;/types/#{type.id}/animals/#{type.animals[0].id}&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(response).to have_http_status(200)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="96e0753b86d335140c197b6fed325a2fcc957a64">
+  <div class="header">
+    <h3>spec/requests/get_individual_type_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &quot;get an individual type route&quot;, :type =&gt; :request do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  type = FactoryGirl.create(:type)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;returns the type&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    get &quot;/types/#{type.id}&quot;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="8">
