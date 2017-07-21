@@ -14,6 +14,15 @@ class TypesController < ApplicationController
     json_response(@type, :created)
   end
 
+  def update
+    @type = Type.find(params[:id])
+    if @type.update!(type_params)
+      render status: 200, json: {
+        message: "Successfully updated!"
+      }
+    end
+  end
+
   private
   def type_params
     params.permit(:species)
