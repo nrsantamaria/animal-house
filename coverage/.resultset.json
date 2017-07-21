@@ -2,9 +2,6 @@
   "RSpec": {
     "coverage": {
       "/Users/nickys/Desktop/animal-house/spec/models/animal_spec.rb": [
-
-      ],
-      "/Users/nickys/Desktop/animal-house/spec/models/type_spec.rb": [
         1,
         null,
         1,
@@ -287,7 +284,7 @@
         1,
         null
       ],
-      "/Users/nickys/Desktop/animal-house/app/models/type.rb": [
+      "/Users/nickys/Desktop/animal-house/app/models/animal.rb": [
         1,
         1,
         null
@@ -297,12 +294,19 @@
         1,
         null
       ],
-      "/Users/nickys/Desktop/animal-house/app/models/animal.rb": [
+      "/Users/nickys/Desktop/animal-house/spec/models/type_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null
+      ],
+      "/Users/nickys/Desktop/animal-house/app/models/type.rb": [
         1,
         1,
         null
       ]
     },
-    "timestamp": 1500654298
+    "timestamp": 1500654343
   }
 }
