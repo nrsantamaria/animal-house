@@ -18,6 +18,16 @@ class AnimalsController < ApplicationController
     json_response(@animal, :created)
   end
 
+  def update
+    @type = Type.find(params[:type_id])
+    @animal = @type.animals.find(params[:id])
+    if @animal.update!(animal_params)
+      render status: 200, json: {
+        message: "Yay! A new animal!"
+      }
+    end
+  end
+
   private
   def animal_params
     params.permit(:name, :color, :breed, :age, :gender, :weight, :description, :photo)
