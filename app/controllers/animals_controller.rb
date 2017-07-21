@@ -38,7 +38,7 @@ class AnimalsController < ApplicationController
     @animal = Animal.find(params[:id])
     if @animal.destroy!
       render status: 200, json: {
-        message: "Successfully deleted animal."
+        message: "Successfully deleted!"
       }
     end
   end

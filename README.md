@@ -1,24 +1,72 @@
-# README
+# Animal House
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### _Nicky Santamaria_
 
-Things you may want to cover:
+## Description
 
-* Ruby version
+An api that will return a list of animals for different species. It will let you search for type of animal by species.
 
-* System dependencies
+## Technologies used / Prerequisites
 
-* Configuration
+* [Ruby](https://www.ruby-lang.org/en/downloads/)
+* [Rails](http://rubyonrails.org/)
+* [PostgreSQL](https://www.postgresql.org/docs/9.2/static/app-psql.html)
+* [Git](https://git-scm.com/)
 
-* Database creation
+## Other Sources
 
-* Database initialization
+* [Serializer](https://blog.engineyard.com/2015/active-model-serializers)
+* [kaminari](https://github.com/kaminari/kaminari)
 
-* How to run the test suite
+## Installation
 
-* Services (job queues, cache servers, search engines, etc.)
+* `$ git clone https://github.com/nrsantamaria/animal-house`
+* `$ cd animal-house`
 
-* Deployment instructions
+## PostgreSQL Integration
 
-* ...
+* `$ postgres`
+* `$ rake db:create`
+* `$ rake db:migrate db:test:prepare`
+
+## Seed database
+
+* `$ rake db:seed`
+
+## Development server
+
+Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
+
+## Specifications
+
+| Behavior |  Input   |  Output  |
+|----------|:--------:|:--------:|
+|Add a type to the database|Post, species => 'Cat'|species: Cat, id: 1|
+|Add a animal to the database|Visit specific type path, Post, name => 'Garfield', type_id: 1|name: 'Garfield', type: { name: 'Cat'}|
+|Update a type.|Put, name => 'Dog'|name: 'Dog', id:1|
+|Update a animal|Visit specific type path, Put, name => 'Otis'|name: 'Otis', type: { name: 'Dog'}|
+|Delete a animal.|Visit specific animal path, Delete|message: "Successfully deleted!"|
+|Delete a type.|Visit a specific type path, Delete|message: "Successfully deleted!"|
+|See a list of all types|Visit '/types' path|name: Dog|
+|See a list of all animals for a particular type|Visit '/types/1'|animals: name: Otis|
+|Search for a type by species|Visit '/types/by_species?name="dog"'|species: Cat, id: 1|
+
+## Known Bugs
+* N/A
+
+## License
+
+*This software is licensed under MIT license.*
+
+```
+Copyright (c) 2017 Nicky Santamaria
+```
+
+## Types Path
+![Type](public/images/types.png)
+## Animals Path
+![Animal](public/images/animals.png)
+## Search Path
+![Search](public/images/search.png)
+## Random Path
+![Random](public/images/random.png)
