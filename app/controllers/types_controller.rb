@@ -9,6 +9,11 @@ class TypesController < ApplicationController
     json_response(@type)
   end
 
+  def by_species
+    @type = Type.by_species(params[:species])
+    json_response(@type)
+  end
+
   def create
     @type = Type.create!(type_params)
     json_response(@type, :created)
