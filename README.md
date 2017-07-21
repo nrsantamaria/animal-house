@@ -17,6 +17,7 @@ An api that will return a list of animals for different species. It will let you
 
 * [Serializer](https://blog.engineyard.com/2015/active-model-serializers)
 * [kaminari](https://github.com/kaminari/kaminari)
+* [Postman](https://www.getpostman.com/)
 
 ## Installation
 
@@ -35,7 +36,7 @@ An api that will return a list of animals for different species. It will let you
 
 ## Development server
 
-Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
+Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files. Or checkout [Postman](https://www.getpostman.com/) and see the data a little nicer.
 
 ## Specifications
 
@@ -49,7 +50,7 @@ Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app wi
 |Delete a type.|Visit a specific type path, Delete|message: "Successfully deleted!"|
 |See a list of all types|Visit '/types' path|name: Dog|
 |See a list of all animals for a particular type|Visit '/types/1'|animals: name: Otis|
-|Search for a type by species|Visit '/types/by_species?name="dog"'|species: Cat, id: 1|
+|Search for a type by species|Visit '/types/by_species?name="dog"'|species: Dog, id: 1|
 
 ## Known Bugs
 * N/A
