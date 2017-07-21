@@ -256,7 +256,7 @@
         1,
         null,
         1,
-        5,
+        7,
         null,
         null,
         null,
@@ -438,6 +438,25 @@
         null,
         null
       ],
+      "/Users/nickys/Desktop/animal-house/spec/requests/serializer_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/nickys/Desktop/animal-house/spec/requests/unprocessable_entity_spec.rb": [
         1,
         null,
@@ -492,9 +511,9 @@
         null,
         null,
         1,
-        3,
-        3,
-        3,
+        5,
+        5,
+        5,
         null,
         null,
         1,
@@ -544,8 +563,19 @@
       "/Users/nickys/Desktop/animal-house/app/controllers/concerns/response.rb": [
         1,
         1,
-        16,
+        18,
         null,
+        null
+      ],
+      "/Users/nickys/Desktop/animal-house/app/serializers/animal_serializer.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/nickys/Desktop/animal-house/app/serializers/type_serializer.rb": [
+        1,
+        1,
         null
       ],
       "/Users/nickys/Desktop/animal-house/app/controllers/types_controller.rb": [
@@ -590,6 +620,6 @@
         null
       ]
     },
-    "timestamp": 1500659517
+    "timestamp": 1500660004
   }
 }
