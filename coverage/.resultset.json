@@ -256,7 +256,7 @@
         1,
         null,
         1,
-        0,
+        2,
         null,
         null,
         null,
@@ -318,6 +318,25 @@
         null,
         1,
         1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/nickys/Desktop/animal-house/spec/requests/get_animals_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
         1,
         1,
         null,
@@ -452,11 +471,22 @@
       "/Users/nickys/Desktop/animal-house/app/controllers/concerns/response.rb": [
         1,
         1,
-        8,
+        10,
+        null,
+        null
+      ],
+      "/Users/nickys/Desktop/animal-house/app/controllers/animals_controller.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null,
         null,
         null
       ]
     },
-    "timestamp": 1500657610
+    "timestamp": 1500657943
   }
 }
