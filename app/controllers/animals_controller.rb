@@ -2,7 +2,7 @@ class AnimalsController < ApplicationController
 
   def index
     @type = Type.find(params[:type_id])
-    @animals = @type.animals
+    @animals = @type.animals.page(params[:page])
     json_response(@animals)
   end
 
