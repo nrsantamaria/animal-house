@@ -15,7 +15,7 @@ class AnimalsController < ApplicationController
   def random
     number = Random.new
     @type = Type.find(params[:type_id])
-    @animal = @type.animals.find(number.rand(1...80))
+    @animal = @type.animals.find(number.rand(1...20))
     json_response(@animal)
   end
 
