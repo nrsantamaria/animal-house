@@ -14,7 +14,7 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-21T10:47:00-07:00">2017-07-21T10:47:00-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-21T10:51:57-07:00">2017-07-21T10:51:57-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -31,9 +31,9 @@
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>35</b> files in total.
-    <b>218</b> relevant lines. 
-    <span class="green"><b>218</b> lines covered</span> and
+    <b>36</b> files in total.
+    <b>229</b> relevant lines. 
+    <span class="green"><b>229</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -53,9 +53,9 @@
       <tr>
         <td class="strong"><a href="#a9024c6d013140ed743fa2f9be5b42a64877a72d" class="src_link" title="app/controllers/animals_controller.rb">app/controllers/animals_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>35</td>
-        <td>21</td>
-        <td>21</td>
+        <td>44</td>
+        <td>25</td>
+        <td>25</td>
         <td>0</td>
         <td>1.7</td>
       </tr>
@@ -77,7 +77,7 @@
         <td>3</td>
         <td>3</td>
         <td>0</td>
-        <td>5.7</td>
+        <td>6.0</td>
       </tr>
       
       <tr>
@@ -281,6 +281,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#c1e16de7a543f7412e7270876f51f4949259eee0" class="src_link" title="spec/requests/delete_animal_spec.rb">spec/requests/delete_animal_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>11</td>
+        <td>7</td>
+        <td>7</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#0fc15f4d2a0afb827e69d3643d889af33d5927ba" class="src_link" title="spec/requests/delete_type_spec.rb">spec/requests/delete_type_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>11</td>
@@ -421,8 +431,8 @@
     <h3>app/controllers/animals_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>21</b> relevant lines. 
-      <span class="green"><b>21</b> lines covered</span> and
+      <b>25</b> relevant lines. 
+      <span class="green"><b>25</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -484,20 +494,20 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="10">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="10">
+          <span class="hits">3</span>
           
           <code class="ruby">    @type = Type.find(params[:type_id])</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="11">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="11">
+          <span class="hits">3</span>
           
           <code class="ruby">    @animal = @type.animals.find(params[:id])</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="12">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="12">
+          <span class="hits">3</span>
           
           <code class="ruby">    json_response(@animal)</code>
         </li>
@@ -613,28 +623,82 @@
         <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
-          <code class="ruby">  private</code>
+          <code class="ruby">  def destroy</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="32">
           <span class="hits">1</span>
           
-          <code class="ruby">  def animal_params</code>
+          <code class="ruby">    @animal = Animal.find(params[:id])</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="33">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
           
-          <code class="ruby">    params.permit(:name, :color, :breed, :age, :gender, :weight, :description, :photo)</code>
+          <code class="ruby">    if @animal.destroy!</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      render status: 200, json: {</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">        message: &quot;Successfully deleted animal.&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">      }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="35">
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def animal_params</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="42">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    params.permit(:name, :color, :breed, :age, :gender, :weight, :description, :photo)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
           
           
           <code class="ruby">end</code>
@@ -756,8 +820,8 @@
           <code class="ruby">  def json_response(object, status = :ok)</code>
         </li>
       
-        <li class="covered" data-hits="15" data-linenumber="3">
-          <span class="hits">15</span>
+        <li class="covered" data-hits="16" data-linenumber="3">
+          <span class="hits">16</span>
           
           <code class="ruby">    render json: object, status: status</code>
         </li>
@@ -2369,8 +2433,8 @@
           <code class="ruby">      after(:create) do |type, evaluator|</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="9">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="9">
+          <span class="hits">5</span>
           
           <code class="ruby">        create_list(:animal, evaluator.animals_count, type: type)</code>
         </li>
@@ -2979,6 +3043,91 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="65">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="c1e16de7a543f7412e7270876f51f4949259eee0">
+  <div class="header">
+    <h3>spec/requests/delete_animal_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>7</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &quot;the delete an individual animal route&quot;, :type =&gt; :request do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;deletes an individual animal status&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    type = FactoryGirl.create(:type_with_animals)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    get &quot;/types/#{type.id}/animals/#{type.animals[0].id}&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    delete &quot;/types/#{type.id}/animals/#{type.animals[0].id}&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(JSON.parse(response.body)[&#39;message&#39;]).to eq(&#39;Successfully deleted animal.&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">end</code>

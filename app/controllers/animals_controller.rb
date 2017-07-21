@@ -28,6 +28,15 @@ class AnimalsController < ApplicationController
     end
   end
 
+  def destroy
+    @animal = Animal.find(params[:id])
+    if @animal.destroy!
+      render status: 200, json: {
+        message: "Successfully deleted animal."
+      }
+    end
+  end
+
   private
   def animal_params
     params.permit(:name, :color, :breed, :age, :gender, :weight, :description, :photo)
