@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.1/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.1/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.10.1/favicon_green.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.10.1/favicon_yellow.png" />
     <link rel="icon" type="image/png" href="./assets/0.10.1/favicon.png" />
   </head>
   
@@ -14,27 +14,27 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-21T09:57:46-07:00">2017-07-21T09:57:46-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-21T10:07:42-07:00">2017-07-21T10:07:42-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">98.84%</span></span>
+    (<span class="covered_percent"><span class="yellow">88.8%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         1.01
+       <span class="red">
+         0.99
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>20</b> files in total.
-    <b>86</b> relevant lines. 
-    <span class="green"><b>85</b> lines covered</span> and
-    <span class="red"><b>1</b> lines missed </span>
+    <b>24</b> files in total.
+    <b>125</b> relevant lines. 
+    <span class="green"><b>111</b> lines covered</span> and
+    <span class="red"><b>14</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -49,6 +49,36 @@
       </tr>
     </thead>
     <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#604404e7098e61a142f6c7b237136374cd71a9a8" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="red strong">66.67 %</td>
+        <td>11</td>
+        <td>6</td>
+        <td>4</td>
+        <td>2</td>
+        <td>0.7</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#5628d8609d64561b790b3120a2d0ca0607f80fae" class="src_link" title="app/controllers/concerns/response.rb">app/controllers/concerns/response.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#4c0335a302b5377255158d43c4dad4213aa57f3a" class="src_link" title="app/controllers/types_controller.rb">app/controllers/types_controller.rb</a></td>
+        <td class="red strong">47.62 %</td>
+        <td>39</td>
+        <td>21</td>
+        <td>10</td>
+        <td>11</td>
+        <td>0.6</td>
+      </tr>
       
       <tr>
         <td class="strong"><a href="#fe793476862fa36f2db958044b68674d466c965f" class="src_link" title="app/models/animal.rb">app/models/animal.rb</a></td>
@@ -187,7 +217,7 @@
         <td>2</td>
         <td>2</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.5</td>
       </tr>
       
       <tr>
@@ -241,6 +271,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#2a15e52e2e8cc2c2a248af793ba9bdd23e3b9514" class="src_link" title="spec/requests/get_types_spec.rb">spec/requests/get_types_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>16</td>
+        <td>9</td>
+        <td>9</td>
+        <td>0</td>
+        <td>1.7</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#87ea278c77ed53a6f5a15d0f26041789be801a7d" class="src_link" title="spec/support/factory_girl.rb">spec/support/factory_girl.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>3</td>
@@ -265,6 +305,393 @@
       </div>
     
       <div class="source_files">
+      
+        <div class="source_table" id="604404e7098e61a142f6c7b237136374cd71a9a8">
+  <div class="header">
+    <h3>app/controllers/application_controller.rb</h3>
+    <h4><span class="red">66.67 %</span> covered</h4>
+    <div>
+      <b>6</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ApplicationController &lt; ActionController::API</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  include Response</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  rescue_from ActiveRecord::RecordInvalid do |exception|</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">    json_response({ message: exception.message }, :unprocessable_entity)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  rescue_from ActiveRecord::RecordNotFound do |exception|</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">    json_response({ message: exception.message }, :not_found)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="5628d8609d64561b790b3120a2d0ca0607f80fae">
+  <div class="header">
+    <h3>app/controllers/concerns/response.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module Response</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def json_response(object, status = :ok)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="3">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    render json: object, status: status</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="4c0335a302b5377255158d43c4dad4213aa57f3a">
+  <div class="header">
+    <h3>app/controllers/types_controller.rb</h3>
+    <h4><span class="red">47.62 %</span> covered</h4>
+    <div>
+      <b>21</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>11</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class TypesController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="3">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @types = Type.all</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="4">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    json_response(@types)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">    @type = Type.find(params[:id])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">    json_response(@type)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
+          
+          <code class="ruby">    @type = Type.create!(type_params)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
+          
+          <code class="ruby">    json_response(@type, :created)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def update</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="18">
+          
+          
+          <code class="ruby">    @type = Type.find(params[:id])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="19">
+          
+          
+          <code class="ruby">    if @type.update!(type_params)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="20">
+          
+          
+          <code class="ruby">      render status: 200, json: {</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">        message: &quot;Successfully updated!&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">      }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def destroy</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="27">
+          
+          
+          <code class="ruby">    @type = Type.find(params[:id])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="28">
+          
+          
+          <code class="ruby">    if @type.destroy!</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="29">
+          
+          
+          <code class="ruby">      render status: 200, json: {</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">        message: &quot;Successfully deleted!&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">      }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def type_params</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="37">
+          
+          
+          <code class="ruby">    params.permit(:species)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
       
         <div class="source_table" id="fe793476862fa36f2db958044b68674d466c965f">
   <div class="header">
@@ -1445,8 +1872,8 @@
           <code class="ruby">ActiveSupport.on_load(:action_controller) do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="8">
+          <span class="hits">2</span>
           
           <code class="ruby">  wrap_parameters format: [:json]</code>
         </li>
@@ -2213,6 +2640,121 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="65">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="2a15e52e2e8cc2c2a248af793ba9bdd23e3b9514">
+  <div class="header">
+    <h3>spec/requests/get_types_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>9</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &quot;get all types route&quot;, :type =&gt; :request do</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="4">
+          <span class="hits">3</span>
+          
+          <code class="ruby">  before { Type.destroy_all }</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="5">
+          <span class="hits">3</span>
+          
+          <code class="ruby">  let!(:types) { FactoryGirl.create_list(:type, 20)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="7">
+          <span class="hits">3</span>
+          
+          <code class="ruby">  before { get &#39;/types&#39;}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;returns all types&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(JSON.parse(response.body).size).to eq(20)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;returns status code 200&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(response).to have_http_status(:success)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">end</code>
